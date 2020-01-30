@@ -1,0 +1,25 @@
+
+<% content_for :nav do %>
+    <ul class="nav-menu">
+            <li class="menu-item brand">My contact</li>
+            <li class="menu-item"><a href="/">Home</a></li>
+            <li class="menu-item"><a href="/auth/login" role="button">Login </a></li>
+    </ul>
+<% end %>
+
+<% content_for :content do %>
+    <h1 style="text-align: center;">Users List
+        <form id="box-search" action="/search" method="GET">
+            <p>Name</p>
+            <input type="text" placeholder="Enter name" name="q" value="" />
+            <button>Search</button>
+        </form>
+        <div id="list-users">
+            <div class="row">
+                <p class="name-column" style="font-weight: bold;">Name</p>
+                <p class="phone-column" style="font-weight: bold;">Phone</p>
+                <p class="action-column" style="font-weight: bold;">Action </p>
+            </div>
+        </div>
+    </h1>
+<% end %>

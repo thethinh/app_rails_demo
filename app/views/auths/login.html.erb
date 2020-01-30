@@ -1,0 +1,24 @@
+<% content_for :content do %>
+    <div class="container" style="background-color: rgba(0,43,255,0.1); height: 600px; width: 600px;">
+        <h1 style="text-align: center; padding-top: 80px;">Login</h1>
+        <form style="padding-top: 50px;" method="POST">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input class="form-control" id="exampleInputEmail1" name="email" type="email" aria-describedby="emailHelp" placeholder="Enter email"/>
+                <small class="form-text text-muted" id="emailHelp">We&apos;ll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input class="form-control" id="exampleInputPassword1" name="password" type="password" placeholder="Password" value="" />
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="exampleCheck1" type="checkbox" name="check" />
+                <label class="form-check-label" for="exampleCheck1">Remeber me</label>
+            </div>
+            <button class="btn btn-primary">Login</button>
+        </form>
+    <div class="dangky" style="display: flex;"><a class="link_subscribe" href="/auth/subscribe">Đăng kí </a>
+        <p>&nbspnếu chưa có tài khoản</p>
+    </div>
+</div>
+<% end %>
